@@ -1,0 +1,8 @@
+.idea
+.DS_Store
+meteor/.build
+meteor/.meteor/versions
+bin
+bin-mobile
+meteor-mobile/.build
+meteor-mobile/.meteor/local

@@ -1,0 +1,36 @@
+<head>
+  <title>agus-mobile</title>
+</head>
+
+<body>
+  {{> MainTemplate}}
+</body>
+
+<template name="MainTemplate">
+    <h1>Meteor SQLITE Integration Testing</h1>
+    <button id="sql_check">SQL Check</button><br />
+    <button id="sql_start">SQL Start</button><br />
+    <button id="sql_createTable">SQL Create Table</button><br />
+    <button id="sql_deleteTable">SQL Delete Table</button><br />
+    <button id="sql_createInsertData">SQL Insert Data</button><br />
+    <button id="sql_countData">SQL Count Data</button><br />
+    <button id="sql_selectData">SQL Select Data</button><br />
+    Result: {{message}}<br />
+
+    {{#if res}}
+        <table>
+            {{#each res}}
+                <tr>
+                    <td>{{id}}</td>
+                    <td>{{data}}</td>
+                    <td>{{data_num}}</td>
+                </tr>
+            {{/each}}
+        </table>
+    {{/if}}
+
+    <br />
+    <br />
+    <button id="counter">Click Me</button><br />
+    <p>You've pressed the button {{counter}} times.</p><br />
+</template>
