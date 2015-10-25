@@ -1,5 +1,9 @@
 .idea
 .DS_Store
+
+.meteor/local
+.meteor/meteorite
+
 meteor/.build
 meteor/.meteor/versions
 bin
